@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Site Meta Data -->
+    <meta name="author" content="Developer Zahid | Zahid Hasan Munna">
+    <meta name="description" content="My name is Zahid Hasan Munna. I'm a Front-End Developer. I created this The Number Guess Game with HTML, CSS & VanillaJS">
+    <meta name="keywords" content="Number-Guess-Game, VanillaJS-game, VanillaJS, frontend developer, frontend designer, web designer, developer, designer, dev-z">
+    <!-- Site Title -->
+    <title>The Number Guess Game | Dev-Z</title>
+    <!-- All CSS -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <!-- All CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body data-author="Developer-zahid">
+    <!-- Page Header Section -->
+    <header class="header">
+        <h1 class="header__title">Guess The Number🔢</h1>
+        <img id="themeToggler" src="./assets/images/toggler.png" alt="Toggler Image" aria-label="Toggle Theme Mode" title="Toggle Theme Mode">
+    </header>
+    <!-- Container Section -->
+    <section class="container">
+        <div class="player-group">
+            <h1 id="playerTitle" class="player-group__title">😎 Player 1</h1>
+        </div>
+        <div id="inputGroup__one" class="input-group">
+            <input type="password" id="inputGroupBox__one" class="input-group__box" placeholder="Set Your Number" autocomplete="new-password">
+            <button id="inputGroupBtn__one" class="input-group__button">Submit</button>
+        </div>
+        <div id="inputGroup__two" class="input-group">
+            <input type="number" id="inputGroupBox__two" class="input-group__box" placeholder="Guess The Number" autocomplete="off">
+            <button id="inputGroupBtn__two" class="input-group__button">Submit</button>
+        </div>
+        <div class="show-message">
+            <p id="showMessage" class="show-message__text"></p>
+        </div>
+        <div id="hintMessage" class="hint-message">
+            <div class="hint-message__body">
+                <p class="hint-message__text">Selected Number is between <span id="hintMessage__greater"></span> and <span id="hintMessage__lower"></span></p>
+            </div>
+        </div>
+        <div id="counter" class="counter">
+            <p class="counter__text">Chance: <span id="chanceNumber"></span><span class="symbol">/</span>5</p>
+        </div>
+    </section>
+    <!-- Modal Section -->
+    <div id="modal" class="modal">
+        <div class="modal__body">
+            <h1 id="showResults" class="modal__body__title"></h1>
+            <button id="refreshBtn" class="modal__body__button">🔄 Play Again</button>
+        </div>
+    </div>
+    <p class="copyright-text">Powered By <a href="https://developer-zahid-portfolio.netlify.app" target="_blank" class="copyright-link">Developer-Zahid</a></p>
+    <!-- All Script -->
+    <script src="./assets/js/script.js" defer></script>
+</body>
+</html>
